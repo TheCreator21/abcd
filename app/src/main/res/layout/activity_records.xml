@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Records">
+    <TextView
+        android:scrollbars = "vertical"
+        android:id="@+id/scroeView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:scrollbars = "vertical"
+        android:id="@+id/table"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"/>
+    <fragment android:name="com.example.myapplication.BlankFragment"
+        android:id="@+id/fragment"
+        android:layout_weight="2"
+        android:layout_width="200dp"
+        android:layout_height="30dp" />
+    <Button
+        android:id="@+id/RecordsToMainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main" />
+</LinearLayout>
